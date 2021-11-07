@@ -151,6 +151,8 @@ def teamWrite(a,channelname):
     objectlist=jsontxt['value']
     #创建
     print("    创建team频道")
+	
+'''
     data={
          "displayName": channelname,
          "description": "This channel is where we debate all future architecture plans",
@@ -161,6 +163,7 @@ def teamWrite(a,channelname):
     url=r'https://graph.microsoft.com/v1.0/teams/'+objectlist[0]['id']+r'/channels/'+jsontxt['id']
     print("    删除team频道")
     apiReq('delete',a,url)
+'''
 
 def onenoteWrite(a,notename):
     url=r'https://graph.microsoft.com/v1.0/me/onenote/notebooks'
